@@ -10,8 +10,17 @@ void classic_for () {
 	}
 }
 
+void simple_while () {
+	int i = 0;
+	while (i < MAX) {
+		printf("simple_while: %d\n", i);
+		++i;
+	}
+}
+
 int main (int argc, char **argv) {
 	classic_for();
+	simple_while();
 	return EXIT_SUCCESS;
 }
 
