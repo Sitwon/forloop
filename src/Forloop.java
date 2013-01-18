@@ -4,6 +4,7 @@ public class Forloop {
 	public static void main (String[] args) {
 		classic_for();
 		simple_while();
+		clever_while();
 	}
 
 	static void classic_for () {
@@ -17,6 +18,13 @@ public class Forloop {
 		while (i < MAX) {
 			System.out.println("simple_while: " + i);
 			++i;
+		}
+	}
+
+	static void clever_while () {
+		int i = -1;
+		while (++i < MAX) {
+			System.out.println("clever_while: " + i);
 		}
 	}
 }
