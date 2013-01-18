@@ -25,10 +25,18 @@ void clever_while () {
 	}
 }
 
+void cleverer_while () {
+	int i = MAX;
+	while (i--) {
+		printf("cleverer_while: %d\n", i);
+	}
+}
+
 int main (int argc, char **argv) {
 	classic_for();
 	simple_while();
 	clever_while();
+	cleverer_while();
 	return EXIT_SUCCESS;
 }
 
