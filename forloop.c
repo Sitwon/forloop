@@ -32,11 +32,20 @@ void cleverer_while () {
 	}
 }
 
+void reversed_cleverer_while () {
+	int j = MAX;
+	while (j--) {
+		int i = MAX - 1 - j;
+		printf("reversed_cleverer_while: %d\n", i);
+	}
+}
+
 int main (int argc, char **argv) {
 	classic_for();
 	simple_while();
 	clever_while();
 	cleverer_while();
+	reversed_cleverer_while();
 	return EXIT_SUCCESS;
 }
 
