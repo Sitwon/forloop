@@ -18,9 +18,17 @@ void simple_while () {
 	}
 }
 
+void clever_while () {
+	int i = -1;
+	while (++i < MAX) {
+		printf("clever_while: %d\n", i);
+	}
+}
+
 int main (int argc, char **argv) {
 	classic_for();
 	simple_while();
+	clever_while();
 	return EXIT_SUCCESS;
 }
 
